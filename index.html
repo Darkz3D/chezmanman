@@ -13,25 +13,35 @@
       color: #333;
     }
     header {
-      background: #e7c36e;
-      color: #333;
+      background: url("Madras1.png");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
       padding: 1rem;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
-      text-align: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
     header img {
       height: 120px;
-      margin-bottom: 1rem;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: flex-start;
     }
     nav a {
-      margin: 0.5rem;
       text-decoration: none;
-      color: #333;
+      color: #fff;
       font-weight: bold;
-      display: inline-block;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
     }
     main {
       padding: 1rem;
@@ -58,33 +68,25 @@
       margin-top: 1rem;
     }
 
-    @media (min-width: 600px) {
-      header  {
-  background: url("Madras2.png");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-      nav a {
-        margin: 0 1rem;
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        justify-content: center;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Chez Manman">
     <nav>
       <a href="#about">À propos</a>
       <a href="#products">Produits</a>
       <a href="#contact">Contact</a>
     </nav>
+    <img src="logo.png" alt="Logo Chez Manman">
   </header>
   <main>
     <section id="about">
@@ -101,7 +103,6 @@
         <li>Autres condiments</li>
         <li>Produits capillaires et crèmes pour la peau</li>
         <li>Tissu Madras</li>
-        
       </ul>
     </section>
     <section id="contact">
