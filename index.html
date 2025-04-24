@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chez Manman - Épicerie tropicale a Montréal</title>
+  <title>Chez Manman - Épicerie tropicale à Montréal</title>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -17,31 +17,36 @@
       color: #333;
       padding: 1rem;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      text-align: center;
     }
     header img {
-      height: 80px;
+      height: 120px;
+      margin-bottom: 1rem;
     }
     nav a {
-      margin: 0 1rem;
+      margin: 0.5rem;
       text-decoration: none;
       color: #333;
       font-weight: bold;
+      display: inline-block;
     }
     main {
-      padding: 2rem;
+      padding: 1rem;
       max-width: 800px;
       margin: auto;
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
     footer {
       background: #30475e;
       color: white;
       text-align: center;
       padding: 1rem;
+      font-size: 0.9rem;
     }
     .whatsapp {
       background-color: #25d366;
@@ -52,11 +57,22 @@
       display: inline-block;
       margin-top: 1rem;
     }
+
+    @media (min-width: 600px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+      nav a {
+        margin: 0 1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Chez Manman" style="height:150px;">
+    <img src="logo.png" alt="Logo Chez Manman">
     <nav>
       <a href="#about">À propos</a>
       <a href="#products">Produits</a>
@@ -66,21 +82,25 @@
   <main>
     <section id="about">
       <h2>À propos</h2>
-      <p>Chez Manman, c'est bien plus qu'une épicerie : c'est un carrefour où se croisent le soleil des Caraibes et la chaleur humaine des Québécois. Notre mission ? Faciliter l'intégration des populations immigrées de la Caraibe par l'échange culturel et culinaire. Ici, on parle francais, québécois et parfois même Créole ! Le tout servi avec une généreuse dose d'humour et beaucoup, beaucoup d'amour.</p>
+      <p>Chez Manman, c'est bien plus qu'une épicerie : c'est un carrefour où se croisent le soleil des Caraïbes et la chaleur humaine des Québécois. Notre mission ? Faciliter l'intégration des populations immigrées de la Caraïbe par l'échange culturel et culinaire. Ici, on parle français, québécois et parfois même Créole ! Le tout servi avec une généreuse dose d'humour et beaucoup, beaucoup d'amour.</p>
     </section>
     <section id="products">
       <h2>Produits en vedette</h2>
       <ul>
-        <li> Chocolat traditionnel</li>
-        <li>Jus tropical des Antilles</li>
+        <li>Chocolat traditionnel</li>
+        <li>Jus tropical des Antilles: Royal Soda, Ordinaire, Vaval, Amigo</li>
         <li>Épices antillaises pour aromatiser vos plats</li>
+        <li>Accras morue, boudin noir/blanc, patés salés</li>
         <li>Autres condiments</li>
+        <li>Produits capillaires et crèmes pour la peau</li>
+        <li>Tissu Madras</li>
+        
       </ul>
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <p>Pour toute question, n'hésitez pas à nous contacter</p>
-      <a class="whatsapp" href="https://wa.me/14383948970" target="_blank">Contactez nous sur WhatsApp</a>
+      <p>Pour toute question, n'hésitez pas à nous contacter.</p>
+      <a class="whatsapp" href="https://wa.me/14383948970" target="_blank">Contactez-nous sur WhatsApp</a>
     </section>
   </main>
   <footer>
